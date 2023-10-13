@@ -1,0 +1,33 @@
+<div class="mat-elevation-z8 container">
+  <div class="details">
+    <mat-card class="title">
+      <h1>Visualizar Veiculo do Id: {{ veiculo.data.id }}</h1>
+    </mat-card>
+    <mat-card class="subTitle">
+      <h3>Id: {{ veiculo.data.id }}</h3>
+      <h3>Tipo: {{veiculo.data.veiculo }}</h3>
+      <h3>Marca: {{veiculo.data.marca }}</h3>
+      <h3>Ano: {{veiculo.data.ano }}</h3>
+      <h3>Descricao: {{veiculo.data.descricao }}</h3>
+      <h3>Cor: {{veiculo.data.cor }}</h3>
+      <h3>Vendido: {{veiculo.data.vendido }}</h3>
+      <h3>Criado: {{veiculo.data.criado }}</h3>
+      <h3>Atualizado: {{veiculo.data.atualizado }}</h3>
+
+    </mat-card>
+  </div>
+
+
+  <div class="botoes">
+    <button routerLink="/veiculo/update/{{veiculo.data.id}}" mat-mini-fab aria-label="" class="editar">
+      <mat-icon>edit</mat-icon>
+    </button>
+
+    <button (click)="deletById()" mat-mini-fab color="warn" aria-label="">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button routerLink="/veiculo/read" mat-mini-fab color="accent" aria-label="">
+      <mat-icon>cancel</mat-icon>
+    </button>
+  </div>
+</div>

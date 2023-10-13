@@ -1,0 +1,51 @@
+<div class="mat-elevation-z8 container">
+  <mat-card class="title">
+    <h1>
+      Atualizar Veiculo de Id: {{ veiculo.id }} </h1>
+  </mat-card>
+
+  <div class="info">
+    <mat-form-field appearance="fill" class="label">
+      <mat-label>Tipo do veiculo</mat-label>
+      <input required matInput [(ngModel)]="veiculo.veiculo" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="label">
+      <mat-label>Marca do veiculo</mat-label>
+      <input required matInput [(ngModel)]="veiculo.marca" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="label">
+      <mat-label>Ano do veiculo</mat-label>
+      <input required matInput [(ngModel)]="veiculo.ano" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="label">
+      <mat-label>Descricao</mat-label>
+      <input required matInput [(ngModel)]="veiculo.descricao" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="label">
+      <mat-label>Cor</mat-label>
+      <input required matInput [(ngModel)]="veiculo.cor" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="label">
+      <mat-label>Vendido</mat-label>
+      <input required matInput [(ngModel)]="veiculo.vendido" />
+    </mat-form-field>
+
+  </div>
+
+</div>
+
+<mat-card-actions>
+  <div class="botoes">
+    <button (click)="atualizar()" mat-raised-button color="primary">
+      Atualizar
+    </button>
+    <button routerLink="/veiculo/read" mat-raised-button color="warn">
+      Cancelar
+    </button>
+  </div>
+</mat-card-actions>

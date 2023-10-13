@@ -1,0 +1,24 @@
+.container{
+  width: 30%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  margin-left: 5%;
+
+}
+
+.radio-vendido{
+  display: flex;
+  gap: 10px;
+}
+button{
+  width: 100px;
+}

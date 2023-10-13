@@ -1,0 +1,60 @@
+.container {
+  padding: 18px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label {
+  width: 50vw;
+}
+.data-identificador {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+.btn-upload {
+  text-align: center;
+}
+.mat-fab {
+  width: 70px;
+  height: 70px;
+}
+
+.input-btn {
+  color: #fc3f81;
+  font-size: 16px;
+}
+section {
+  padding: 18px;
+}
+.tipo {
+  width: 20%;
+}
+.botoes {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+.botoes button {
+  font-size: 18px;
+  width: 25%;
+}
+.btn-visualizar{
+  margin-top: 1%;
+
+}
+.visualizar{
+ background-color: #003B90;
+}

@@ -1,0 +1,37 @@
+<mat-card class="container">
+  <mat-card-title>Novo veiculo</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Tipo de veiculo" type="text" name="veiculo" [(ngModel)]="veiculo.veiculo">
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <input matInput placeholder="Marca" type="text" name="marca" [(ngModel)]="veiculo.marca">
+
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="ano" type="number" name="ano" [(ngModel)]="veiculo.ano">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>descricao</mat-label>
+      <textarea matInput placeholder="descricao" type="text" name="descricao"
+        [(ngModel)]="veiculo.descricao"></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="cor" type="text" name="cor" [(ngModel)]="veiculo.cor">
+    </mat-form-field>
+
+    <mat-radio-group name="vendido" [(ngModel)]="veiculo.vendido" class="radio-vendido">
+      <mat-radio-button [value]="false">Não vendido</mat-radio-button>
+      <mat-radio-button [value]="true">Vendido</mat-radio-button>
+    </mat-radio-group>
+  </form>
+</mat-card>
+<div class="buttons">
+  <button mat-raised-button color="primary" (click)="createVeiculo()">Salvar</button>
+  <button mat-raised-button (click)="cancel()" color="warn">Cancelar</button>
+</div>

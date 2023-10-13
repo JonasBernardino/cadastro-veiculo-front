@@ -1,0 +1,24 @@
+.title {
+  margin-bottom: 2%;
+}
+.container {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .details{
+  width: 80%;
+}
+
+
+.editar{
+  background-color:#1B9AAA;
+}
+.botoes{
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
